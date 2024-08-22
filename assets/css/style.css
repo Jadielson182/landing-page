@@ -21,11 +21,12 @@
  }
  .white-bg {
     background-color: var(--white-color);
+    color: var(--primary-cor);
  }
  .main-content {
     max-width: 120rem; /*= 1200px*/
     margin: 0 auto;
-    padding: var(--gap);
+    padding: 10rem var(--gap);
  }
  .section-px {
     min-height: 100vh;
@@ -38,6 +39,7 @@
     left: 0;
     right: 0;
     border-bottom: 0.1rem solid var(--light-gray-color);
+    z-index: 1;
  }
  .menu h1 {
     font-size: 2.3rem;
@@ -84,5 +86,75 @@
    width: 50%;
    left: 25%;
  }
+ .menu-spacing {
+   height: 65px;
+ }
+
+ .intro-content {
+   display: grid;
+   position: relative;
+   top: -8rem;
+   grid-template-columns: 1fr 1.5fr;
+   gap: var(--gap);
+   min-height: 100vh;
+ }
+ .intro-text-content, .intro-img {
+   display: flex;
+   flex-flow: column wrap;
+   justify-content: center;
+ }
+ /* .intro-text-content h2 {
+  
+ } */
+ .intro-img img, .intro-mg svg {
+   max-width: 100%;
+   height: auto;
+
+ }
+ .top3-content {
+   max-width: 64rem;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   justify-content: center;
+   min-height: 100vh;
+   text-align: center;
+ }
+ .grid-one-content {
+   height: 100vh;
+   display: flex;
+   flex-flow: column wrap;
+   justify-content: center;
+ }
+ .grid-main-heading{
+   margin-bottom: 1rem;
+ }
+ .grid-description {
+   padding-bottom: 5rem;
+
+ }
+ .grid {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: var(--gap);
+   counter-reset: grid-counter;
+
+ }
+ .grid h3 {
+   font-size: 3rem;
+   position: relative;
+   padding-left: 5rem;
+   padding-bottom: 2rem;
+ }
+ .grid h3::before {
+   counter-increment: grid-counter;
+   content: counter(grid-counter);
+   position: absolute;
+   font-size: 8rem;
+   font-style: italic;
+   top: -4rem;
+   left: -2rem;
+   transform: rotate(5deg);
 
 
+ }
