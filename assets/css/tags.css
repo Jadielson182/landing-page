@@ -1,5 +1,12 @@
 @charset "UTF-8";
-
+:root {
+   --primary-cor: #0A1128;
+   --white-color: #ffffff;
+   --yellow-color:#787838;
+   --orange-color:#855325;
+   --light-gray-color: #EEEEEE;
+   --gap: 3rem;
+}
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
@@ -46,3 +53,31 @@ html {
  p {
    margin-bottom: 3rem;
  }
+ table {
+   width: 100%;
+   border-collapse: collapse;
+
+ }
+ table caption {
+   font-style: italic;
+   font-size: 1.6rem;
+   text-align: left;
+   margin-bottom: 0.1rem;
+ }
+ table th, table td {
+   white-space: nowrap;
+   padding: 1rem;
+   text-align: left;
+   border: 0.1rem solid var(--light-gray-color);
+ }
+ tfoot td, table th {
+   background: var(--light-gray-color);
+ }
+ .reponsive-table {
+   min-width: 360px;
+   overflow: hidden;
+   overflow-x: auto;
+
+
+ }
+ 
