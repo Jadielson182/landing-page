@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@media (max-width: 800px) {
+    .intro-content {
+        grid-template-columns: 1fr;
+    }
+    .galery-img {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        /* overflow: hidden; */
+        
+    }
+    .galery-img img {
+        width: 100%;
+ 
+
+    }
+    .grid-one-content {
+        display: block;
+     
+    }
+}
