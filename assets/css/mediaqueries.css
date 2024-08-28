@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+
+.close-menu {
+    display: none;
+}
 @media (max-width: 800px) {
     .intro-content {
         grid-template-columns: 1fr;
@@ -34,12 +38,7 @@
    .menu {
     display: none;
    }
-   .close-menu {
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    left: 0;
-   }
+ 
    .close-menu-label::after {
     content: '☰';
     position: fixed;
@@ -63,5 +62,8 @@
    .close-menu:checked~.close-menu-label::after {
     display: block;
     content: '⛌';
+   }
+   .menu-spacing {
+    display: none;
    }
 }
